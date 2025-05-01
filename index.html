@@ -80,6 +80,21 @@
                 transform: scale(1);
             }
         }
+        
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
     </style>
 </head>
 <body class="antialiased">
@@ -154,8 +169,8 @@
     <!-- Video Section -->
     <section class="py-16 bg-black">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden border-glow slide-up mb-10">
-                <iframe title="vimeo-player" src="https://player.vimeo.com/video/1080655309?h=63fbfd2e6a" width="100%" height="360" frameborder="0" allowfullscreen></iframe>
+            <div class="video-container rounded-xl overflow-hidden border-glow slide-up mb-10">
+                <iframe src="https://www.youtube.com/embed/6qpd8pMN934?si=myoOuI4K3Ksbj5V4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="text-center mt-10 slide-up">
                 <a href="https://pay.cakto.com.br/36bbkrd_366778" class="inline-block bg-white text-black px-10 py-5 rounded-lg font-bold text-xl md:text-2xl btn-glow hover:bg-gray-100 transition duration-300 pulse">
